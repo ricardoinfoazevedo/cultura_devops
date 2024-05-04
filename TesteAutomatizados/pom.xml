@@ -3,4 +3,28 @@
   <groupId>TesteAutomatizados</groupId>
   <artifactId>TesteAutomatizados</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+  <build>
+    <sourceDirectory>
+      ${project.basedir}/src/java/main
+    </sourceDirectory>
+    <testSourceDirectory>
+      ${project.basedir}/src/java/test
+    </testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>
+          ${project.basedir}/src/resources/main
+        </directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>
+          ${project.basedir}/src/resources/test
+        </directory>
+      </testResource>
+    </testResources>
+  </build>
+  
 </project>
